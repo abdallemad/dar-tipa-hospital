@@ -23,10 +23,10 @@ export function FinalCTA() {
             لا تتردد في طلب المساعدة، نحن هنا من أجلك وبانتظار تواصلك معنا بكل سرية وتفهم.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
-            <Button size="lg" variant="secondary" className="text-lg px-12 py-8 rounded-full shadow-xl hover:scale-105 transition-transform bg-white text-primary hover:bg-white/90">
+            {/* <Button size="lg" variant="secondary" className="text-lg px-12 py-8 rounded-full shadow-xl hover:scale-105 transition-transform bg-white text-primary hover:bg-white/90">
               احجز استشارة الآن
-            </Button>
-            <Button size="lg" variant="outline" className="text-lg px-10 py-8 rounded-full border-2 border-white/30 text-white hover:bg-white/10 flex items-center gap-2">
+            </Button> */}
+            <Button size="lg" variant="secondary" className="text-lg px-12 py-8 rounded-full shadow-xl hover:scale-105 transition-transform bg-white text-primary hover:bg-white/90">
               <MapPin className="w-5 h-5" />
               موقعنا الجغرافي
             </Button>
@@ -67,10 +67,10 @@ export function Footer() {
           <div>
             <h4 className="font-bold text-lg mb-6">روابط سريعة</h4>
             <ul className="space-y-4">
-              <li><a href="#" className="text-muted-foreground hover:text-primary transition-colors">من نحن</a></li>
-              <li><a href="#" className="text-muted-foreground hover:text-primary transition-colors">خدماتنا</a></li>
-              <li><a href="#" className="text-muted-foreground hover:text-primary transition-colors">قصص التعافي</a></li>
-              <li><a href="#" className="text-muted-foreground hover:text-primary transition-colors">تواصل معنا</a></li>
+              <li><a href="/about" className="text-muted-foreground hover:text-primary transition-colors">من نحن</a></li>
+              <li><a href="/services" className="text-muted-foreground hover:text-primary transition-colors">خدماتنا</a></li>
+              <li><a href="/doctors" className="text-muted-foreground hover:text-primary transition-colors">أطباؤنا</a></li>
+              <li><a href="/contact" className="text-muted-foreground hover:text-primary transition-colors">تواصل معنا</a></li>
             </ul>
           </div>
 

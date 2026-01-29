@@ -1,24 +1,8 @@
-import { Navbar } from "@/components/sections/Navbar";
-import { Hero } from "@/components/sections/Hero";
-import { WhoWeHelp } from "@/components/sections/WhoWeHelp";
-import { OurApproach } from "@/components/sections/OurApproach";
-import { WhyDarTayba } from "@/components/sections/WhyDarTayba";
-import { Doctors } from "@/components/sections/Doctors";
-import { Testimonials } from "@/components/sections/Testimonials";
-import { FinalCTA, Footer } from "@/components/sections/Footer";
+import { Metadata } from "next";
 
-export default function Home() {
-  return (
-    <main className="min-h-screen">
-      <Navbar />
-      <Hero />
-      <WhoWeHelp />
-      <OurApproach />
-      <WhyDarTayba />
-      <Doctors />
-      <Testimonials />
-      <FinalCTA />
-      <Footer />
-    </main>
-  );
-}
+export const metadata: Metadata = {
+  title: "الرئيسية | نرافقك في رحلة التعافي للوصول لبر الأمان",
+  description: "اكتشف بيئة علاجية آمنة وداعمة في مستشفى دار طيبة. متخصصون في الطب النفسي وعلاج الإدمان بإشراف نخبة من الأطباء والمتخصصين.",
+};
+
+export { default } from "./HomePageClient";

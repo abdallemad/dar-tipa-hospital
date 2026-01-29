@@ -1,36 +1,57 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🌿 Dar Tayba – Mental Health & Addiction Treatment Center
 
-## Getting Started
+**Dar Tayba** is a premium, human-centered web application designed for a mental health and addiction treatment center. Built with **Next.js 15**, **Tailwind CSS**, and **Framer Motion**, it focuses on emotional UX, privacy, and accessibility.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## ✨ Key Features
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- 🏥 **Comprehensive Care Pages**: Dedicated sections for Home, About, Services, Doctors, and Contact.
+- 🔒 **Privacy-First Design**: Non-intimidating contact flows and sensitive information handling.
+- 📱 **Fully Responsive**: Optimized for all screen sizes with a mobile-first approach.
+- 🌍 **RTL Support**: Native Arabic support with professional typography and layouts.
+- ⚡ **Modern Stack**: High performance using Next.js App Router and optimized assets.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🛠 Tech Stack
 
-## Learn More
+- **Framework**: [Next.js 15 (App Router)](https://nextjs.org/)
+- **Styling**: [Tailwind CSS 4](https://tailwindcss.com/)
+- **Components**: [shadcn/ui](https://ui.shadcn.com/)
+- **Animations**: [Framer Motion](https://www.framer.com/motion/)
+- **Icons**: [Lucide React](https://lucide.dev/)
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🧠 Product Thinking & UX
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+This project isn't just about code; it's about solving human problems:
 
-## Deploy on Vercel
+- **Calm UI**: Used a palette of muted greens and teal to reduce user anxiety.
+- **Progressive Disclosure**: Information is organized in tabs and accordions to avoid overwhelming users in distress.
+- **Trust Building**: Strategic placement of trust signals (privacy notes, safety icons) before any call-to-action.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## � Getting Started
+
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/abdallemad/dar-tipa-hospital.git
+   ```
+2. **Install dependencies**:
+   ```bash
+   npm install
+   ```
+3. **Run the development server**:
+   ```bash
+   npm run dev
+   ```
+
+---
+
+## 👨‍💻 Developed By
+
+**Abdalla Emad**  
+[GitHub Profile](https://github.com/abdallemad) | [LinkedIn](https://www.linkedin.com/in/abdallemad/)

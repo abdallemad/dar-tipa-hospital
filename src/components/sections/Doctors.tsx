@@ -1,33 +1,39 @@
 "use client";
 
 import { motion } from "motion/react";
-import Image from "next/image";
+import { User, UserRoundIcon, Users2 } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 
 const doctors = [
   {
     name: "د. أحمد علي",
     role: "استشاري الطب النفسي",
-    image: "/doctors/psychiatrist.png",
-    description: "خبرة أكثر من 15 عاماً في علاج الاكتئاب والاضطرابات النفسية المعقدة.",
+    experience: "15 عاماً",
+    color: "bg-blue-50 text-blue-500",
   },
   {
     name: "د. سارة محمود",
     role: "أخصائية علاج الإدمان",
-    image: "/doctors/specialist.png",
-    description: "متخصصة في برامج إعادة التأهيل السلوكي والتعافي من الإدمان.",
+    experience: "10 أعوام",
+    color: "bg-teal-50 text-teal-500",
   },
   {
     name: "د. ليلى حسن",
-    role: "معالجة أسرية",
-    image: "/doctors/therapist.png",
-    description: "تركيز خاص على تحسين الروابط الأسرية ودعم أهالي المتعافين.",
+    role: "معالجة أسرية وسلوكية",
+    experience: "8 أعوام",
+    color: "bg-purple-50 text-purple-500",
+  },
+  {
+    name: "د. محمد سامي",
+    role: "أخصائي علم النفس الإكلينيكي",
+    experience: "12 عاماً",
+    color: "bg-orange-50 text-orange-500",
   },
 ];
 
 export function Doctors() {
   return (
-    <section className="py-24 bg-background overflow-hidden" id="doctors">
+    <section className="py-24 bg-muted/30" id="doctors">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <motion.h2
@@ -36,47 +42,29 @@ export function Doctors() {
             viewport={{ once: true }}
             className="text-3xl md:text-5xl font-bold mb-4"
           >
-            نخبة من أفضل الأطباء
+            نخبة من الأطباء والمتخصصين
           </motion.h2>
-          <motion.p
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ delay: 0.1 }}
-            className="text-lg text-muted-foreground max-w-2xl mx-auto"
-          >
-            نحن نفخر بوجود فريق طبي متكامل يتميز بالخبرة العلمية والسمت الإنساني الرفيع.
-          </motion.p>
+          <p className="text-lg text-muted-foreground">كفاءات علمية متميزة تعمل بروح الفريق لخدمتكم.</p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {doctors.map((doctor, index) => (
             <motion.div
               key={index}
-              initial={{ opacity: 0, scale: 0.9 }}
-              whileInView={{ opacity: 1, scale: 1 }}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: index * 0.1 }}
-              whileHover={{ y: -10 }}
-              className="group"
+              transition={{ delay: index * 0.1 }}
             >
-              <Card className="border-none shadow-none bg-transparent">
+              <Card className="border-none shadow-sm hover:shadow-xl transition-all duration-300 rounded-[2.5rem] bg-background text-center p-8">
                 <CardContent className="p-0">
-                  <div className="relative aspect-4/5 rounded-[2.5rem] overflow-hidden mb-6 shadow-2xl transition-all duration-500 group-hover:shadow-primary/20">
-                    <Image
-                      src={doctor.image}
-                      alt={doctor.name}
-                      fill
-                      className="object-cover transition-transform duration-700 group-hover:scale-110"
-                    />
-                    <div className="absolute inset-0 bg-linear-to-t from-primary/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                  <div className={`w-24 h-24 ${doctor.color} rounded-3xl mx-auto mb-6 flex items-center justify-center`}>
+                    <UserRoundIcon className="w-12 h-12" />
                   </div>
-                  <div className="text-center px-4">
-                    <h3 className="text-2xl font-bold mb-1 text-foreground">{doctor.name}</h3>
-                    <p className="text-primary font-medium mb-3">{doctor.role}</p>
-                    <p className="text-muted-foreground text-sm leading-relaxed">
-                      {doctor.description}
-                    </p>
+                  <h3 className="text-xl font-bold mb-1">{doctor.name}</h3>
+                  <p className="text-sm text-primary font-medium mb-3">{doctor.role}</p>
+                  <div className="text-xs text-muted-foreground bg-muted px-3 py-1 rounded-full inline-block">
+                    خبرة {doctor.experience}
                   </div>
                 </CardContent>
               </Card>

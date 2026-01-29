@@ -38,7 +38,7 @@ export function Navbar() {
           <Link href="/" className="font-medium hover:text-primary transition-colors">الرئيسية</Link>
           <Link href="/about" className="font-medium hover:text-primary transition-colors">من نحن</Link>
           <Link href="/services" className="font-medium hover:text-primary transition-colors">الخدمات</Link>
-          <Link href="#doctors" className="font-medium hover:text-primary transition-colors">أطباؤنا</Link>
+          <Link href="/doctors" className="font-medium hover:text-primary transition-colors">أطباؤنا</Link>
           <Link href="/contact" className="font-medium hover:text-primary transition-colors">تواصل معنا</Link>
         </div>
 
@@ -72,7 +72,7 @@ export function Navbar() {
               <Link href="/" className="text-xl font-medium" onClick={() => setMobileMenuOpen(false)}>الرئيسية</Link>
               <Link href="/about" className="text-xl font-medium" onClick={() => setMobileMenuOpen(false)}>من نحن</Link>
               <Link href="/services" className="text-xl font-medium" onClick={() => setMobileMenuOpen(false)}>الخدمات</Link>
-              <Link href="#doctors" className="text-xl font-medium" onClick={() => setMobileMenuOpen(false)}>أطباؤنا</Link>
+              <Link href="/doctors" className="text-xl font-medium" onClick={() => setMobileMenuOpen(false)}>أطباؤنا</Link>
               <Link href="/contact" className="text-xl font-medium" onClick={() => setMobileMenuOpen(false)}>تواصل معنا</Link>
               <hr />
               <div className="flex items-center justify-between">
