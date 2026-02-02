@@ -1,3 +1,5 @@
+[!Hero](/public/screen-shoots/image.png)
+
 # 🌿 Dar Tayba – Mental Health & Addiction Treatment Center
 
 **Dar Tayba** is a premium, human-centered web application designed for a mental health and addiction treatment center. Built with **Next.js 15**, **Tailwind CSS**, and **Framer Motion**, it focuses on emotional UX, privacy, and accessibility.
@@ -50,6 +52,10 @@ This project isn't just about code; it's about solving human problems:
    ```
 
 ---
+
+## Live Demo
+
+[Live Demo](https://dar-tipa-hospital.vercel.app/)
 
 ## 👨‍💻 Developed By
 
