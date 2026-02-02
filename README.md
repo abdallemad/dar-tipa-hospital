@@ -1,4 +1,4 @@
-[!Hero](/public/screen-shoots/image.png)
+![Hero](/public/screen-shoots/image.png)
 
 # 🌿 Dar Tayba – Mental Health & Addiction Treatment Center
 
