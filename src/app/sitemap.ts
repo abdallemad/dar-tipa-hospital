@@ -1,7 +1,7 @@
 import { MetadataRoute } from "next";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = "https://dartayba.com";
+  const baseUrl = "https://dar-tipa-hospital.vercel.app";
 
   return [
     {

@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: "/",
       disallow: "/private/",
     },
-    sitemap: "https://dartayba.com/sitemap.xml",
+    sitemap: "https://dar-tipa-hospital.vercel.app/sitemap.xml",
   };
 }
